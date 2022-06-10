@@ -105,8 +105,7 @@ setUp(
     .andThen(
       child1.inject(injectionProfile)
         // grandChild will start when last child1 user will terminate
-        .andThen(grandChild.inject(injectionProfile)),
-      child2.inject(injectionProfile)
+        .andThen(grandChild.inject(injectionProfile))
     )
 )
 //#andThen
